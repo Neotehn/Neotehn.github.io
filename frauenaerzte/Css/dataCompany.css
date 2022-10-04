@@ -1,0 +1,17 @@
+.contactHours {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0px;
+}
+
+.dataCompany {
+    margin: 40px 0;
+}
+
+.telephone {
+    fill: #ff6500;
+}
+
+.fax {
+    fill: #ff6500;
+}

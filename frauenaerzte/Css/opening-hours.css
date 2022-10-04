@@ -1,0 +1,36 @@
+.demo-bg {
+    background: #ffac0c;
+    margin-top: 60px;
+}
+
+.business-hours {
+    position: relative;
+    flex: 0.5;
+    padding-bottom: 20px;
+}
+
+.business-hours .title {
+    font-size: 20px;
+    color: #ff6500;
+    text-transform: uppercase;
+    padding-left: 5px;
+    border-left: 4px solid #ffac0c;
+}
+
+.business-hours li {
+    color: black;
+    line-height: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.business-hours li:last-child {
+    border-bottom: none;
+}
+
+.business-hours .opening-hours li.today {
+    color: #ff6500;
+}
+
+.business-hours .opening-hours li.today span {
+    color: #ff6500;
+}

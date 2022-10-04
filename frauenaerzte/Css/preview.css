@@ -1,0 +1,135 @@
+.preview {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.previewText {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-right: 15px;
+}
+
+.previewImgs {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previewImgs img {
+    max-width: 60%;
+    max-height: 60%;
+    padding: 0 20px;
+    opacity: 1;
+    transition: opacity .4s;
+}
+
+.previewImgsStroth {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+.previewImgsEgorova {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+#stroth {
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+}
+
+.welcomeText {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobilePreview {
+    display: none;
+}
+
+.mobilePreview .welcomeText {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mobileShowcast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobileShowcast img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.framePreviewEgorova {
+    background-color: #ffac0c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.framePreviewStroth {
+    background-color: #ffac0c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.framePreviewEgorova .wrapperAccordeon {
+    padding: 0px;
+}
+
+.framePreviewStroth .wrapperAccordeon {
+    padding: 0px;
+}
+
+.framePreviewEgorova .accordion {
+    background-color: #7c4657;
+}
+
+@media (max-width: 1200px) {
+    .previewText {
+        display: none;
+    }
+
+    .previewImgs {
+        display: none;
+    }
+
+    .mobilePreview {
+        display: block;
+    }
+}

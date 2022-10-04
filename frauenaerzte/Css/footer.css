@@ -1,0 +1,158 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: #444 1px solid;
+}
+
+.footer-elements {
+    display: block;
+}
+
+.footer-elements h3 {
+    color: white;
+    border-bottom: black 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.footer-elements a {
+    padding: 10px;
+    background-color: lightblue;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.table-colm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-colm p {
+    margin: 5px 0;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer-links a {
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px;
+    color: #888;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer-social a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-social img {
+    margin: 10px;
+    width: 32px;
+}
+
+.contact h2 {
+    font-size: 20px;
+    color: darksalmon;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    color: #eeeeee;
+    position: relative;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.contact a {
+    padding: 7px;
+    background-color: darkcyan;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.contactHours h2 {
+    font-size: 20px;
+    color: #ff6500;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.contact-details svg {
+    margin-right: 5px;
+}
+
+.contact-medium {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-medium p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.contact-number {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-number p {
+    margin: 10px 0 15px 10px;
+    position: relative;
+}
+
+@media (max-width: 820px) {
+
+    .contactHours {
+        display: block !important;
+    }
+
+    .contactHours h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact {
+        margin: 0;
+    }
+}

@@ -1,5 +1,5 @@
 window.addEventListener('scroll', (event) => {
-    var pictureHeight = document.querySelector('.imgIntro').offsetHeight;
+    var pictureHeight = document.querySelector('.intro').offsetHeight;
     var navigationHeight = document.querySelector('.navigation-element').offsetHeight;
     var scrollHeight = document.documentElement.scrollTop;
     var navigationBar = document.getElementById("navigationBar");

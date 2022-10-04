@@ -7,7 +7,7 @@ function strothTextEnter (elem) {
     welcomeText.style.display = "none"
     egorova.style.opacity = "0.3";
     text.style.display = 'flex';
-    console.log(elem);
+    console.log(elem.id);
 }
 
 function strothTextLeave (elem) {

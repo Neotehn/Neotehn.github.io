@@ -54,10 +54,10 @@ $(document).ready(function(){
         var newPage = window.location.protocol + "//" + window.location.host + "/" + "website/";
 
         if (choosedLan == "EN") {
-            newPage += "frauenaerzte/Pages/enPage.html";
+            newPage += "frontEnd/Pages/enPage.html";
             window.location.href = newPage;
         } else if (choosedLan == "RU") {
-            newPage += "frauenaerzte/Pages/ruPage.html";
+            newPage += "frontEnd/Pages/ruPage.html";
             window.location.href = newPage;
         } else if (choosedLan == "DE") {
             newPage += "index.html";

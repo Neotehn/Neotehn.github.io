@@ -5,7 +5,6 @@
 
 
 .previewText {
-    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -14,14 +13,13 @@
     padding-right: 15px;
 }
 
-.previewImgs {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
-.previewImgs img {
+.gallery img {
     max-width: 60%;
     max-height: 60%;
     padding: 0 20px;

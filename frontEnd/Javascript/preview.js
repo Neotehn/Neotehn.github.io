@@ -6,7 +6,7 @@ function strothTextEnter () {
 
     welcomeText.style.display = "none"
     egorova.style.opacity = "0.3";
-    text.style.visibility = 'visible';
+    text.style.display = 'flex';
 }
 
 function strothTextLeave () {
@@ -17,7 +17,7 @@ function strothTextLeave () {
 
     welcomeText.style.display = "flex"
     egorova.style.opacity = "1";
-    text.style.visibility = 'hidden';
+    text.style.display = 'none';
 }
 
 function egorovaTextEnter () {
@@ -28,7 +28,7 @@ function egorovaTextEnter () {
 
     welcomeText.style.display = "none"
     stroth.style.opacity = "0.3";
-    text.style.visibility = 'visible';
+    text.style.display = 'flex';
 }
 
 function egorovaTextLeave () {
@@ -39,7 +39,7 @@ function egorovaTextLeave () {
 
     welcomeText.style.display = "flex"
     stroth.style.opacity = "1";
-    text.style.visibility = 'hidden';
+    text.style.display = 'none';
 }
 
 window.addEventListener('load', (event) => {

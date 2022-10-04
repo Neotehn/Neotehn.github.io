@@ -22,19 +22,21 @@
     cursor: pointer;
 }
 
-.teaser-text-intro {
+.introBox {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(248, 248, 248, 0.7);
     padding: 20px;
-    width: 40%;
-    border-radius: 10px;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
 }
 
-.teaser-text-intro .box {
+.introBox .logo {
     position: relative;
+    vertical-align: middle;
 }
 
 .middleBox {

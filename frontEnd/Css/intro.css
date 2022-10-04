@@ -1,5 +1,8 @@
 .intro {
     position: relative;
+    background: url("../Images/Intro/homeImage.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .intro img{
@@ -29,14 +32,15 @@
     transform: translate(-50%, -50%);
     background-color: rgba(248, 248, 248, 0.7);
     padding: 20px;
-    width: 20vw;
-    height: 20vw;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 
 .introBox .logo {
     position: relative;
-    vertical-align: middle;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .middleBox {

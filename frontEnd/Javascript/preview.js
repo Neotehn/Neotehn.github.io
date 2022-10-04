@@ -1,4 +1,4 @@
-function strothTextEnter () {
+function strothTextEnter (elem) {
     var text = document.querySelector('.previewImgsStroth');
     var egorova = document.getElementById('egorova');
     var welcomeText = document.querySelector('.welcomeText');
@@ -7,10 +7,10 @@ function strothTextEnter () {
     welcomeText.style.display = "none"
     egorova.style.opacity = "0.3";
     text.style.display = 'flex';
-    console.log(this);
+    console.log(elem);
 }
 
-function strothTextLeave () {
+function strothTextLeave (elem) {
     var text = document.querySelector('.previewImgsStroth');
     var egorova = document.getElementById('egorova');
     var welcomeText = document.querySelector('.welcomeText');
@@ -21,7 +21,7 @@ function strothTextLeave () {
     text.style.display = 'none';
 }
 
-function egorovaTextEnter () {
+function egorovaTextEnter (elem) {
     var text = document.querySelector('.previewImgsEgorova');
     var stroth = document.getElementById('stroth');
     var welcomeText = document.querySelector('.welcomeText');
@@ -32,7 +32,7 @@ function egorovaTextEnter () {
     text.style.display = 'flex';
 }
 
-function egorovaTextLeave () {
+function egorovaTextLeave (elem) {
     var text = document.querySelector('.previewImgsEgorova');
     var stroth = document.getElementById('stroth');
     var welcomeText = document.querySelector('.welcomeText');

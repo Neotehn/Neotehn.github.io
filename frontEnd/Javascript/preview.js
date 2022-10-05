@@ -47,7 +47,7 @@ function leavePortrait (elem) {
     var welcomeText = document.querySelector('.welcomeText');
     var id = elem.id;
     var picture = document.getElementById(id);
-    var text = document.querySelector(id + 'Body');
+    var text = document.querySelector('#' + id + 'Body');
     var allPictures = document.querySelectorAll('.gallery-image');
 
 
@@ -61,6 +61,9 @@ function leavePortrait (elem) {
 
 
     for (var i = 0; allPictures.length > i; i++) {
+        var tmpPicture = document.getElementById(allPictures[i].id);
+        console.log(tmpPicture);
+        console.log(allPictures[i].id);
         //opacity from all = 1
     }
 

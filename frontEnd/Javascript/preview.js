@@ -51,11 +51,14 @@ function leavePortrait (elem) {
     var allPictures = document.querySelectorAll('.previewImgs');
 
 
+    debug.log(allPictures);
+    debug.log(text);
+    debug.log(id);
+
     welcomeText.style.display = "flex";
     picture.style.opacity = "1";
     text.style.display = 'none';
 
-    debug.log(allPictures);
 
     for (var i = 0; allPictures.length > i; i++) {
         //opacity from all = 1
@@ -64,7 +67,7 @@ function leavePortrait (elem) {
 }
 
 function enterPortrait (elem) {
-    var welcomeText = document.querySelector('.welcomeText');
+    /*var welcomeText = document.querySelector('.welcomeText');
     var id = document.id;
     var picture = document.getElementById(id);
     var text = document.querySelector(id + 'Body');
@@ -73,7 +76,7 @@ function enterPortrait (elem) {
 
     welcomeText.style.display = "flex";
     picture.style.opacity = "1";
-    text.style.display = 'none';
+    text.style.display = 'none';*/
 }
 
 window.addEventListener('load', (event) => {

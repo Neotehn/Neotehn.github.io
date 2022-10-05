@@ -43,6 +43,39 @@ function egorovaTextLeave (elem) {
     text.style.display = 'none';
 }
 
+function leavePortrait (elem) {
+    var welcomeText = document.querySelector('.welcomeText');
+    var id = document.id;
+    var picture = document.getElementById(id);
+    var text = document.querySelector(id + 'Body');
+    var allPictures = document.querySelectorAll('.previewImgs');
+
+
+    welcomeText.style.display = "flex";
+    picture.style.opacity = "1";
+    text.style.display = 'none';
+
+    debug.log(allPictures);
+
+    for (var i = 0; allPictures.length > i; i++) {
+        //opacity from all = 1
+    }
+
+}
+
+function enterPortrait (elem) {
+    var welcomeText = document.querySelector('.welcomeText');
+    var id = document.id;
+    var picture = document.getElementById(id);
+    var text = document.querySelector(id + 'Body');
+    var allPictures = document.querySelectorAll('previewImg');
+
+
+    welcomeText.style.display = "flex";
+    picture.style.opacity = "1";
+    text.style.display = 'none';
+}
+
 window.addEventListener('load', (event) => {
     let dropdown = document.querySelector('.dropdown')
 

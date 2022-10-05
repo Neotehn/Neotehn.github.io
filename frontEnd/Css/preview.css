@@ -47,6 +47,15 @@
     align-items: center;
 }
 
+.previewImg {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 #stroth {
     transform: scaleX(-1);
     -webkit-transform: scaleX(-1);

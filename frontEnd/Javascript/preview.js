@@ -51,9 +51,9 @@ function leavePortrait (elem) {
     var allPictures = document.querySelectorAll('.gallery-image');
 
 
-    debug.log(allPictures);
-    debug.log(text);
-    debug.log(id);
+    console.log(allPictures);
+    console.log(text);
+    console.log(id);
 
     welcomeText.style.display = "flex";
     picture.style.opacity = "1";

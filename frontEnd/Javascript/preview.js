@@ -45,7 +45,7 @@ function egorovaTextLeave (elem) {
 
 function leavePortrait (elem) {
     var welcomeText = document.querySelector('.welcomeText');
-    var id = document.id;
+    var id = elem.id;
     var picture = document.getElementById(id);
     var text = document.querySelector(id + 'Body');
     var allPictures = document.querySelectorAll('.previewImgs');

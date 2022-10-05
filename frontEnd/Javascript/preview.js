@@ -48,7 +48,7 @@ function leavePortrait (elem) {
     var id = elem.id;
     var picture = document.getElementById(id);
     var text = document.querySelector(id + 'Body');
-    var allPictures = document.querySelectorAll('.previewImgs');
+    var allPictures = document.querySelectorAll('.gallery-image');
 
 
     debug.log(allPictures);

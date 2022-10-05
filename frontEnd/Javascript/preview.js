@@ -46,40 +46,35 @@ function egorovaTextLeave (elem) {
 function leavePortrait (elem) {
     var welcomeText = document.querySelector('.welcomeText');
     var id = elem.id;
-    var picture = document.getElementById(id);
     var text = document.querySelector('#' + id + 'Body');
     var allPictures = document.querySelectorAll('.gallery-image');
 
-
-    console.log(allPictures);
-    console.log(text);
-    console.log(id);
-
     welcomeText.style.display = "flex";
-    picture.style.opacity = "1";
     text.style.display = 'none';
 
 
     for (var i = 0; allPictures.length > i; i++) {
         var tmpPicture = document.getElementById(allPictures[i].id);
-        console.log(tmpPicture);
-        console.log(allPictures[i].id);
-        //opacity from all = 1
+        tmpPicture.style.opacity = "1";
     }
-
 }
 
 function enterPortrait (elem) {
-    /*var welcomeText = document.querySelector('.welcomeText');
-    var id = document.id;
-    var picture = document.getElementById(id);
-    var text = document.querySelector(id + 'Body');
-    var allPictures = document.querySelectorAll('previewImg');
+    var welcomeText = document.querySelector('.welcomeText');
+    var id = elem.id;
+    var text = document.querySelector('#' + id + 'Body');
+    var allPictures = document.querySelectorAll('.gallery-image');
+
+    welcomeText.style.display = "none";
+    text.style.display = 'flex';
 
 
-    welcomeText.style.display = "flex";
-    picture.style.opacity = "1";
-    text.style.display = 'none';*/
+    for (var i = 0; allPictures.length > i; i++) {
+        if (elem.id !== allPictures[i].id) {
+            var tmpPicture = document.getElementById(allPictures[i].id);
+            tmpPicture.style.opacity = "0.3";
+        }
+    }
 }
 
 window.addEventListener('load', (event) => {

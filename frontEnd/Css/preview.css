@@ -17,6 +17,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    padding-top: 20px;
 }
 
 .gallery img {
@@ -27,6 +28,7 @@
     transition: opacity .4s;
     min-width: 40px;
     min-height: 40px;
+    justify-self: center;
 }
 
 .previewImgsStroth {

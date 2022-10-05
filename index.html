@@ -13,6 +13,7 @@
     <script type="text/javascript" src="frontEnd/Javascript/information.js"></script>
 
     <link rel="stylesheet" href="frontEnd/Css/navigation.css">
+    <link rel="stylesheet" href="frontEnd/Css/emailForm.css">
     <link rel="stylesheet" href="frontEnd/Css/flashNews.css">
     <link rel="stylesheet" href="frontEnd/Css/layout.css">
     <link rel="stylesheet" href="frontEnd/Css/slider.css">
@@ -71,7 +72,7 @@
         <div id="concept" class="viewsight">
             <div class="container preview">
                 <div class="headline">
-                    <h2>Concept</h2>
+                    <h2>Our Concept to secure the Nature!</h2>
                 </div>
                 <img src="frontEnd/Images/concept.png"/>
             </div>
@@ -160,21 +161,33 @@
 
                     <div class="rightAccordeon">
                         <div class="wrapperAccordeon">
-                            <button class="accordion">Question 1</button>
+                            <button class="accordion">How do we use the earnings?</button>
                             <div class="panel">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
-                            <button class="accordion">Question 2</button>
+                            <button class="accordion">Who are our partners?</button>
                             <div class="panel">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
-                            <button class="accordion">Question 3</button>
+                            <button class="accordion">Is there a way to see our transparency?</button>
                             <div class="panel">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
-                            <button class="accordion">Question 4</button>
+                            <button class="accordion">Is there another way to support the movement?</button>
                             <div class="panel">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <button class="accordion">Why should influencer partner up with us?</button>
+                            <div class="panel">
+                                <p>By partnering with us, your community will be impressed by the green image we help you create. This can increase your reach and draws attention to you. Also for companies, which will result in more collaborations. Of course, your network will grow and your sales increase.</p>
+                            </div>
+                            <button class="accordion">Why should companies partner up with us?</button>
+                            <div class="panel">
+                                <p>With our help, you can create a green image for your company. In a time where taking care of our planet is more important then ever, these values will be appreciated by your customers and also attract new customers. Therefore, you can increase your sales as well as your analytics.</p>
+                            </div>
+                            <button class="accordion">Why should you use our Plug-in?</button>
+                            <div class="panel">
+                                <p>Using our browser plug-in and also buying products or services with us involved, makes it possible to profit from cheaper prices. You will be able to see an overview of our discounts for the products you are looking for when searching on Google.</p>
                             </div>
                         </div>
                     </div>
@@ -187,21 +200,51 @@
                 <div class="headline">
                     <h2>Collaborate</h2>
                 </div>
+                <div class="email-form">
+                    <div class="email-form-introText">
+                        Irgendein Introtext
+                    </div>
+                    <form action="https://formspree.io/f/mbjbywaa" method="POST">
+                        <label for="influencer">
+                            Influencer
+                            <input type="checkbox" id="influencer" name="influencer">
+                        </label>
+                        <label for="company">
+                            Company
+                            <input type="checkbox" id="company" name="company">
+                        </label>
+                        <label class="email">
+                            Your email:
+                            <input type="email" name="email">
+                        </label>
+                        <label class="email-address">
+                            Your address:
+                            <input type="address" name="address">
+                        </label>
+                        <label class="email-address">
+                            Your company/channel:
+                            <input type="company" name="company">
+                        </label>
+                        <label class="email-body">
+                            Additional Information:
+                            <textarea name="message"></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
 
         <div id="aboutUs" class="viewsight">
             <div class="container preview">
-                <div class="headline">
-                    <h2>About Us</h2>
-                </div>
                 <div class="previewText">
                     <div class="welcomeText">
                         <h2>Tree4Free Team</h2>
                         <p>
-                            Pontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
-                            passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-                            1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                            Team, what motivated us
+                            <br><br>
+                            TREE4FREE started as a small project, motivated by six students who wanted to do something for the planet. It quickly developed into a huge success, helping companies, their affiliate partners and the environment.
                         </p>
                     </div>
                     <div class="previewImg" id="albanBody">
@@ -220,7 +263,7 @@
                             1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                         </p>
                     </div>
-                    <div class="previewImg">
+                    <div class="previewImg" id="ramonBody">
                         <h2>Ramon Werner</h2>
                         <p>
                             Lontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
@@ -228,7 +271,7 @@
                             1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                         </p>
                     </div>
-                    <div class="previewImg">
+                    <div class="previewImg" id="marcBody">
                         <h2>Marc Pister</h2>
                         <p>
                             Lontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
@@ -236,7 +279,7 @@
                             1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                         </p>
                     </div>
-                    <div class="previewImg">
+                    <div class="previewImg" id="josefineBody">
                         <h2>Josefine Mende</h2>
                         <p>
                             Lontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
@@ -244,7 +287,7 @@
                             1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                         </p>
                     </div>
-                    <div class="previewImg">
+                    <div class="previewImg" id="gylianBody">
                         <h2>Gylian Karsch</h2>
                         <p>
                             Lontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
@@ -255,43 +298,11 @@
                 </div>
                 <div class="previewImgs gallery">
                     <img class="gallery-image" id="alban" onmouseenter="enterPortrait(this)" onmouseleave="leavePortrait(this)" src="frontEnd/Images/FacePicture.png">
-                    <img class="gallery-image" id="renan" onmouseenter="strothTextEnter(this)" onmouseleave="strothTextLeave(this)" src="frontEnd/Images/FacePicture.png">
-                </div>
-
-
-                <div class="mobilePreview">
-                    <div class="welcomeText">
-                        <h2>Frauenarzt Praxis im Herzen von Berlin</h2>
-                        <p>
-                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
-                            passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-                            1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-                        </p>
-                    </div>
-                    <div class="mobileShowcast">
-                        <div class="framePreviewEgorova">
-                            <img id="egorova" src="frontEnd/Images/egorova.jpg">
-                            <div class="rightAccordeon">
-                                <div class="wrapperAccordeon">
-                                    <button class="accordion">Dr. Egorova</button>
-                                    <div class="panel">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="framePreviewStroth">
-                            <img id="stroth" src="frontEnd/Images/stroth.jpg">
-                            <div class="rightAccordeon">
-                                <div class="wrapperAccordeon">
-                                    <button class="accordion">Dr. Stroth</button>
-                                    <div class="panel">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <img class="gallery-image" id="renan" onmouseenter="enterPortrait(this)" onmouseleave="leavePortrait(this)" src="frontEnd/Images/FacePicture.png">
+                    <img class="gallery-image" id="ramon" onmouseenter="enterPortrait(this)" onmouseleave="leavePortrait(this)" src="frontEnd/Images/FacePicture.png">
+                    <img class="gallery-image" id="marc" onmouseenter="enterPortrait(this)" onmouseleave="leavePortrait(this)" src="frontEnd/Images/FacePicture.png">
+                    <img class="gallery-image" id="josefine" onmouseenter="enterPortrait(this)" onmouseleave="leavePortrait(this)" src="frontEnd/Images/FacePicture.png">
+                    <img class="gallery-image" id="gylian" onmouseenter="enterPortrait(this)" onmouseleave="leavePortrait(this)" src="frontEnd/Images/FacePicture.png">
                 </div>
             </div>
         </div>

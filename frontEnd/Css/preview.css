@@ -3,6 +3,16 @@
     flex-direction: column;
 }
 
+.concept {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.concept-image {
+    width: 70%;
+}
 
 .previewText {
     display: flex;

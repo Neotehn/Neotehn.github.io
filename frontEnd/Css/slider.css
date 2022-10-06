@@ -87,19 +87,19 @@
 /* Backgorund Images */
 
 .slide:first-child {
-    background: url('../Images/Slider/entry.jpeg') no-repeat
+    background: url('../Images/schildkröte.webp') no-repeat
     center top/cover;
 }
 .slide:nth-child(2) {
-    background: url('../Images/Slider/op-room.jpeg') no-repeat
+    background: url('../Images/amazonas.jpg') no-repeat
     center top/cover;
 }
 .slide:nth-child(3) {
-    background: url('../Images/Slider/registration.jpeg') no-repeat
+    background: url('../Images/bienensterben.jpg') no-repeat
     center top/cover;
 }
 .slide:nth-child(4) {
-    background: url('../Images/Slider/waiting-room.jpeg') no-repeat
+    background: url('../Images/bildung.jfif') no-repeat
     center top/cover;
 }
 .slide:nth-child(5) {

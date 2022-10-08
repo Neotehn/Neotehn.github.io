@@ -28,7 +28,7 @@
     left: -600px;
     opacity: 0;
     width: 600px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(4, 115, 48, 0.95);
     color: #333;
     padding: 35px;
 }
@@ -45,18 +45,18 @@
 
 .buttons button#next {
     position: absolute;
-    top: 40%;
+    top: 30%;
     right: 15px;
 }
 
 .buttons button#prev {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 15px;
 }
 
 .buttons button {
-    border: 2px solid #fff;
+    border: 2px solid #047330;
     background-color: transparent;
     color: #fff;
     cursor: pointer;
@@ -66,7 +66,7 @@
 }
 
 .buttons button:hover {
-    background-color: #fff;
+    background-color: #047330;
     color: #333;
 }
 

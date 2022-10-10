@@ -20,6 +20,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    min-height: 500px;
     position: relative;
     padding-right: 15px;
 }
@@ -128,18 +129,4 @@
 
 .framePreviewEgorova .accordion {
     background-color: #7c4657;
-}
-
-@media (max-width: 1200px) {
-    .previewText {
-        display: none;
-    }
-
-    .previewImgs {
-        display: none;
-    }
-
-    .mobilePreview {
-        display: block;
-    }
 }

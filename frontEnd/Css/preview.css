@@ -12,15 +12,16 @@
 
 .concept-image {
     padding-top: 30px;
-    width: 70%;
+    max-height: 65vh;
+    max-width: 100%;
 }
 
 .planet-img {
     display: block;
+    padding-right: 60px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    max-height: 60vh;
+    max-height: 55vh;
 }
 
 .previewText {

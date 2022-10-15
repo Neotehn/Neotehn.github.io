@@ -96,15 +96,15 @@
 /* Backgorund Images */
 
 .slide:first-child {
-    background: url('../Images/schildkröte.webp') no-repeat
+    background: url('../Images/allergens.jpg') no-repeat
     center top/cover;
 }
 .slide:nth-child(2) {
-    background: url('../Images/amazonas.jpg') no-repeat
+    background: url('../Images/berlin-map-.jpg') no-repeat
     center top/cover;
 }
 .slide:nth-child(3) {
-    background: url('../Images/bienensterben.jpg') no-repeat
+    background: url('../Images/menu.jpg') no-repeat
     center top/cover;
 }
 .slide:nth-child(4) {

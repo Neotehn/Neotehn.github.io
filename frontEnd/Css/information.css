@@ -22,7 +22,7 @@
 }
 
 .leftShortContent {
-    flex: 0.5;
+    flex: 0.2;
 }
 
 .leftShortContent p {
@@ -30,7 +30,7 @@
 }
 
 .rightAccordeon {
-    flex: 0.5;
+    flex: 0.8;
 }
 
 .wrapperAccordeon {

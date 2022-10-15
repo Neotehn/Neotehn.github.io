@@ -1,5 +1,5 @@
 .header #navigation {
-    font-family: "SukhumvitSet-Thin", serif;
+    font-family: Montserrat, serif;
     position: fixed;
     top: 0;
     width: 100%;
@@ -23,7 +23,7 @@
 
 .navigation-element .nav-title-brand {
     left: 0;
-    font-family: "Perpetua Titling MT", serif;
+    font-family: Montserrat, serif;
     color: white;
     text-align: center;
     padding: 14px 16px;

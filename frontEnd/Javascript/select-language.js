@@ -3,7 +3,8 @@ function getLanguage() {
     (localStorage.getItem('language') == null) ? setLanguage('en') : false;
     console.log("Get language: " + localStorage.getItem('language'));
     $.ajax({
-        url:  '/Tree4Free/frontEnd/Javascript/internationalization/' +  localStorage.getItem('language') + '.json',
+        url:  '/frontEnd/Javascript/internationalization/' +  localStorage.getItem('language') + '.json',
+//        url:  '/Tree4Free/frontEnd/Javascript/internationalization/' +  localStorage.getItem('language') + '.json',
         dataType: 'json', async: false,
         success: function (lang) { language = lang }
     });

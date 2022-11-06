@@ -96,11 +96,11 @@
 /* Backgorund Images */
 
 .slide:first-child {
-    background: url('../Images/allergens.jpg') no-repeat
+    background: url('../Images/Slider/healthy-foods.png') no-repeat
     center top/cover;
 }
 .slide:nth-child(2) {
-    background: url('../Images/berlin-map-.jpg') no-repeat
+    background: url('../Images/Slider/berlin_map.png') no-repeat
     center top/cover;
 }
 .slide:nth-child(3) {

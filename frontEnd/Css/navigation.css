@@ -21,6 +21,15 @@
     cursor: pointer;
 }
 
+.navigation-element .nav-lang {
+    color: white;
+    text-align: center;
+    padding: 14px 6px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 .navigation-element .nav-title-brand {
     left: 0;
     font-family: Montserrat, serif;
@@ -124,6 +133,14 @@
     width: 100%;
     padding: 20px;
     background-color: rgba(248, 248, 248, 0.7);
+    text-decoration: none;
+}
+
+.nav-title-mobile {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(248, 248, 248, 0.7);
+    font-size: 15px;
     text-decoration: none;
 }
 

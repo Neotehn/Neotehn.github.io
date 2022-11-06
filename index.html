@@ -3,6 +3,7 @@
 <head>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="frontEnd/slick/slick.min.js"></script>
     <script type="text/javascript" src="frontEnd/Javascript/slider.js"></script>
     <script type="text/javascript" src="frontEnd/Javascript/intro.js"></script>
@@ -11,6 +12,8 @@
     <script type="text/javascript" src="frontEnd/Javascript/navigation.js"></script>
     <script type="text/javascript" src="frontEnd/Javascript/preview.js"></script>
     <script type="text/javascript" src="frontEnd/Javascript/information.js"></script>
+    <script type="text/javascript" src="frontEnd/Javascript/select-language.js"></script>
+
 
     <link rel="stylesheet" href="frontEnd/Css/navigation.css">
     <link rel="stylesheet" href="frontEnd/Css/emailForm.css">
@@ -31,7 +34,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta id="Viewport" name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>easyMenu</title>
+    <title>easyMenu - Berlin</title>
 </head>
 <body>
     <header class="header">
@@ -43,13 +46,18 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </a>
-                <a class="nav-title" href="#intro">Home</a>
-                <a class="nav-title" href="#concept">Concept</a>
-                <a class="nav-title" href="#whyUs">Why us?</a>
-                <a class="nav-title" href="#slider-praxis">Features</a>
-                <a class="nav-title" href="#collaborate">Join Us</a>
-                <a class="nav-title" href="#aboutUs">About Us</a>
-                <a class="nav-title" href="#contact">Contact</a>
+                <a id="lang-home" class="nav-title" href="#intro">Home</a>
+                <a id="lang-concept" class="nav-title" href="#concept">Concept</a>
+                <a id="lang-why-us" class="nav-title" href="#whyUs">Why us?</a>
+                <a id="lang-features" class="nav-title" href="#slider-praxis">Features</a>
+                <a id="lang-join" class="nav-title" href="#collaborate">Join Us</a>
+                <a id="lang-about-us" class="nav-title" href="#aboutUs">About Us</a>
+                <a id="lang-contact" class="nav-title" href="#contact">Contact</a>
+                <div class="nav-title">
+                    <a class="nav-lang" href="#intro" onclick="setLanguage('en')">EN</a>
+                    <a class="nav-lang">|</a>
+                    <a class="nav-lang" href="#intro" onclick="setLanguage('de')">DE</a>
+                </div>
                 <div class="mobile">
                     <a class="nav-title-mobile" href="#intro">Home</a>
                     <a class="nav-title-mobile" href="#concept">Concept</a>
@@ -58,6 +66,11 @@
                     <a class="nav-title-mobile" href="#collaborate">Join Us</a>
                     <a class="nav-title-mobile" href="#aboutUs">About us</a>
                     <a class="nav-title-mobile" href="#contact">Contact</a>
+                    <div class="nav-title-mobile">
+                        <a class="nav-lang-mobile" href="#intro" onclick="setLanguage('en')">EN</a>
+                        <a class="nav-lang-mobile">|</a>
+                        <a class="nav-lang-mobile" href="#intro" onclick="setLanguage('de')">DE</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,17 +96,20 @@
         <div id="concept" class="viewsight">
             <div class="container concept">
                 <div class="headline">
-                    <h2>Our Concept to make dining out easy!</h2>
+                    <h2 id="lang-concept-title">Our Concept to make dining out easy!</h2>
                 </div>
                 <p>
-                    Our goal is to make eating out easy for everyone involved. In Germany, it is mandatory to declare the 14 main allergens on products but also in restaurants.
-                    This helps people with food intolerances but the employee in restaurants need to research a lot about each of the allergens to declare it without any mistakes.
-                    <br><br>
-                    That's where easyMenu wants to help. The restaurants can scan all their products and create ingredients list for the dishes like that.
-                    The employee in the restaurants also get tips and hints for how to cook considering all allergens.
-                    easyMenu will automatically mark all allergens based on the ingredients list provided.
-                    Via our app, all customers can view the restaurants menu online including declared allergens.
-                    This makes it easier for all visitors of the restaurant to choose the best fitting dish and see an overview of the customized options.
+                    <p id="lang-concept-text-one">
+                        Our goal is to make eating out easy for everyone involved. In Germany, it is mandatory to declare the 14 main allergens on products but also in restaurants.
+                        This helps people with food intolerances but the employee in restaurants need to research a lot about each of the allergens to declare it without any mistakes.
+                    </p>
+                    <p id="lang-concept-text-two">
+                        That's where easyMenu wants to help. The restaurants can scan all their products and create ingredients list for the dishes like that.
+                        The employee in the restaurants also get tips and hints for how to cook considering all allergens.
+                        easyMenu will automatically mark all allergens based on the ingredients list provided.
+                        Via our app, all customers can view the restaurants menu online including declared allergens.
+                        This makes it easier for all visitors of the restaurant to choose the best fitting dish and see an overview of the customized options.
+                    </p>
                 </p>
                 <img class="concept-image" src="frontEnd/Images/easyMenuConcept1.png"/>
             </div>
@@ -102,7 +118,7 @@
         <div class="information" id="whyUs">
             <div class="infoWrapper container">
                 <div class="headline">
-                    <h2>Why Us?</h2>
+                    <h2 id="lang-why-us-title">Why Us?</h2>
                 </div>
                 <div class="contentInformation">
                     <div class="leftShortContent">
@@ -111,63 +127,74 @@
                     </div>
 
                     <div class="rightAccordeon">
-                        <p>
+                        <p id="lang-why-us-general">
                             Working with easyMenu means automation of menus for restaurants and customization for all visitors.
                         </p>
                         <div class="wrapperAccordeon">
-                            <button class="accordion">How do we use the earnings?</button>
+                            <button id="lang-why-us-earnings" class="accordion">How do we use the earnings?</button>
                             <div class="panel">
-                                <p>
+                                <p id="lang-why-us-earnings-answer">
                                     All earnings are used to work on new extensions of the app to make it even better. If you have ideas for extensions,
                                     feel free to send them to us via extension-request@easyMenu.com
                                 </p>
                             </div>
-                            <button class="accordion">How many restaurants are participating?</button>
+                            <button id="lang-why-us-participate" class="accordion">How many restaurants are participating?</button>
                             <div class="panel">
-                                <p>
+                                <p id="lang-why-us-participate-answer">
                                     Currently, we partnered with 800 restaurants in Berlin. You can see all of them in our map overview in the app.
                                 </p>
                             </div>
-                            <button class="accordion">Where is easyMenu active?</button>
+                            <button id="lang-why-us-where" class="accordion">Where is easyMenu active?</button>
                             <div class="panel">
-                                <p>
+                                <p id="lang-why-us-where-answer">
                                     For now, you can use our app for dining in Germany's capital city Berlin. However, we also plan expanding to other cities soon.
                                 </p>
                             </div>
-                            <button class="accordion">Is there a way to see our transparency?</button>
+                            <button id="lang-why-us-transparency" class="accordion">Is there a way to see our transparency?</button>
                             <div class="panel">
-                                <p>
+                                <p id="lang-why-us-transparency-general">
                                     There are several ways to check our transparency.
-                                    <br><br>1. we will upload monthly our income and how we use it to an external website.
-                                    <br><br>2. if you want to check the current status of the company or other features of the product, we offer you calls to our HQ. All you have to do is to send us an email.
-                                    <br><br>3. if you want to know the ingredients of specific dishes, we can provide them as long as the restaurant didn't declare it as company secret.
+                                </p>
+                                <p id="lang-why-us-transparency-one">
+                                    1. we will upload monthly our income and how we use it to an external website.
+                                </p>
+                                <p id="lang-why-us-transparency-two">
+                                    2. if you want to check the current status of the company or other features of the product, we offer you calls to our HQ. All you have to do is to send us an email.
+                                </p>
+                                <p id="lang-why-us-transparency-three">
+                                    3. if you want to know the ingredients of specific dishes, we can provide them as long as the restaurant didn't declare it as company secret.
                                 </p>
                             </div>
-                            <button class="accordion">Why should restaurants partner up with us?</button>
+                            <button id="lang-why-us-partner" class="accordion">Why should restaurants partner up with us?</button>
                             <div class="panel">
-                                <p>
+                                <p id="lang-why-us-partner-one">
                                     By using our app to generate menus including allergens, you get a lot of advantages:
-                                    <br><br>
+                                </p>
+                                <p id="lang-why-us-partner-two">
                                     The most important one being, you don't need to learn about all your ingredients - the app does that for you and tells you what allergens are included.
                                     It also provides tips what to take care of in the kitchen to make sure no allergic reaction is caused for any customer.
                                     Furthermore, you can find guides how to prevent using allergens by only small changes in the recipe.
-                                    <br><br>
+                                </p>
+                                <p id="lang-why-us-partner-three">
                                     So, as long as you stick to the ingredient list, you provided, there is no risk of declaring allergens improperly - the responsibility is fully on the app.
-                                    <br><br>
+                                </p>
+                                <p id="lang-why-us-partner-four">
                                     Another huge advantage is that the app increases attention on your restaurant and therefore gets you more customers.
                                 </p>
                             </div>
-                            <button class="accordion">Why should you use our app?</button>
+                            <button id="lang-why-us-app" class="accordion">Why should you use our app?</button>
                             <div class="panel">
-                                <p>
+                                <p id="lang-why-us-app-one">
                                     Searching for dishes that match your dietary preferences ends with easyMenu.
                                     With our app, you can create a profile that saves your preferences.
                                     Based on that, the app will exclude all dishes you can't eat.
                                     This way, you get a good overview of your options.
-                                    <br><br>
+                                </p>
+                                <p id="lang-why-us-app-two">
                                     Also, you never need to worry about where allergens are declared or whether it was done properly!
                                     No asking for special cards or adjustments in ingredients!
-                                    <br><br>
+                                </p>
+                                <p id="lang-why-us-app-three">
                                     This app makes it not just easy to find the suitable dishes in a restaurant, it also recommends
                                     restaurants which fit your diet! Plus, it is all FREE for you.
                                 </p>
@@ -182,8 +209,8 @@
             <div class="slider">
                 <div class="slide current">
                     <div class="content">
-                        <h1>What dietary preferences are included?</h1>
-                        <p>
+                        <h1 id="dietary-prefs">What dietary preferences are included?</h1>
+                        <p id="dietary-prefs-text">
                             The app declares all 14 allergens: gluten, peanuts, tree nuts, celery, mustard, eggs, milk, sesame, fish, crustaceans, molluscs, soy, sulphides, lupin.
                             Additionally, you have vegetarian and vegan options.
                         </p>
@@ -191,16 +218,16 @@
                 </div>
                 <div class="slide">
                     <div class="content">
-                        <h1>Get an overview</h1>
-                        <p>
+                        <h1 id="overview">Get an overview</h1>
+                        <p id="overview-text">
                             See all restaurants in a map or filter by your preferences. You will be able to see to what degree restaurants fit your diet.
                         </p>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="content">
-                        <h1>Customize your menu</h1>
-                        <p>
+                        <h1 id="menu">Customize your menu</h1>
+                        <p id="menu-text">
                             Get a customized menu based on your dietary preferences - no need to see dishes you can't eat!
                         </p>
                     </div>
@@ -215,42 +242,42 @@
         <div id="collaborate" class="email-box">
             <div class="container preview">
                 <div class="headline">
-                    <h2>Join us</h2>
+                    <h2 id="join-us">Join us</h2>
                 </div>
                 <div class="wrapperAccordeon">
-                    <button class="accordion">As a restaurant</button>
+                    <button id="join-as-restaurant" class="accordion">As a restaurant</button>
                     <div class="panel">
                         <br>
                         <div class="email-form">
-                            <div class="email-form-introText">
+                            <div id="join-intro" class="email-form-introText">
                                 To be part of our vision, all you have to do is fill out this form, and we will contact you with further steps. We will automatically add you to our map overview so your restaurant will be visible for more users.
                             </div>
                             <form action="https://formspree.io/f/mbjbywaa" method="POST">
-                                <label class="email">
+                                <label id="email" class="email">
                                     Your email:
                                     <input type="email" name="email">
                                 </label>
-                                <label class="email-address">
+                                <label id="address" class="email-address">
                                     Your address:
                                     <input type="address" name="address">
                                 </label>
-                                <label class="email-address">
+                                <label id="name" class="email-address">
                                     Your restaurant name:
                                     <input type="company" name="company">
                                 </label>
-                                <label class="email-body">
+                                <label id="add-info" class="email-body">
                                     Additional Information:
                                     <textarea name="message"></textarea>
                                 </label>
                                 <!-- your other form fields go here -->
-                                <button type="submit">Send</button>
+                                <button id="send" type="submit">Send</button>
                             </form>
                         </div>
                         <br>
                     </div>
-                    <button class="accordion">As a customer</button>
+                    <button id="join-as-guest" class="accordion">As a customer</button>
                     <div class="panel">
-                        <p>
+                        <p id="join-guest-text">
                             Just download the app easyMenu and create a profile to customize all your options.
                             There is nothing else to do, have fun using easyMenu!
                         </p>
@@ -264,21 +291,22 @@
             <div class="container preview">
                 <div class="previewText">
                     <div class="headline">
-                        <h2>Tree4Free Team</h2>
+                        <h2>EasyMenu Team</h2>
                     </div>
                     <div class="welcomeText">
-                        <h2>Who are we?</h2>
-                        <p>
+                        <h2 id="who-team">Who are we?</h2>
+                        <p id="who-team-one">
                             easyMenu started as a small project, motivated by six students trying to help restaurants and their visitors.
                             It quickly developed into a huge success. We constantly work on extensions, to make the app even better,
                             including more features that contribute to a better user experience.
-                            <br><br>
+                        </p>
+                        <p id="who-team-two">
                             It makes us proud to see the effect our app has, and we are very thankful for all users of easyMenu.
                         </p>
                     </div>
                     <div class="previewImg" id="albanBody">
                         <h2>Alban De-Tourtier</h2>
-                        <p>
+                        <p id="alban-text">
                             Qontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
                             passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
                             1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -286,7 +314,7 @@
                     </div>
                     <div class="previewImg" id="renanBody">
                         <h2>Renan Dubois</h2>
-                        <p>
+                        <p id="renan-text">
                             I've been living close to the nature and the see when i was younger and i have been able to see how it was going bad during the last year.
                             So i have always tried to make some effort and initiative to have a green impact.
                             I grew up in marseille and moved to berlin for my study. And that where i found my college to start Tree4Free
@@ -294,7 +322,7 @@
                     </div>
                     <div class="previewImg" id="ramonBody">
                         <h2>Ramon Werner</h2>
-                        <p>
+                        <p id="ramon-text">
                             Lontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
                             passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
                             1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -302,7 +330,7 @@
                     </div>
                     <div class="previewImg" id="marcBody">
                         <h2>Marc Pister</h2>
-                        <p>
+                        <p id="marc-text">
                             Lontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
                             passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
                             1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -310,20 +338,21 @@
                     </div>
                     <div class="previewImg" id="josefineBody">
                         <h2>Josefine Mende</h2>
-                        <p>
+                        <p id="josi-text-one">
                             At the age of 17, I developed food intolerances for gluten and lactose. It was very hard adjusting to this diet. However, over time I got used to it.
                             But one thing still stuck with me: I didn't enjoy going to restaurants. Often, I had to ask for specific menus with the allergen declaration on it or needed to get confirmation from the employee.
                             In many cases, I encountered that the allergen declaration was wrong because the employee simply didn't know.
                             Also, it happened that I needed to ask for adjustments of the original dish to avoid to be left with just salads.
                             Don't get me wrong, I like salad, but if that's the only option for the meal, that's anything but appealing!
-                            <br><br>
+                        </p>
+                        <p id="josi-text-two">
                             That made this project very important to me - I want to help everyone with food intolerances or dietary preferences to enjoy dining out
                             as well as every one else to simplify the process.
                         </p>
                     </div>
                     <div class="previewImg" id="gylianBody">
                         <h2>Gylian Karsch</h2>
-                        <p>
+                        <p id="gylian-text">
                             Lontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
                             passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
                             1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -344,7 +373,7 @@
         <div class="dataCompany" id="contact">
             <div class="container">
                 <div class="headline">
-                    <h2>Contact</h2>
+                    <h2 id="lang-contact-title">Contact</h2>
                 </div>
                 <div class="contact-block">
                     <div class="row">

@@ -26,6 +26,14 @@ function fillText() {
     $('#lang-about-us').text(language.aboutUs);
     $('#lang-contact').text(language.contact);
 
+    $('#lang-home-mobile').text(language.home);
+    $('#lang-concept-mobile').text(language.concept);
+    $('#lang-why-us-mobile').text(language.whyUs);
+    $('#lang-features-mobile').text(language.features);
+    $('#lang-join-mobile').text(language.join);
+    $('#lang-about-us-mobile').text(language.aboutUs);
+    $('#lang-contact-mobile').text(language.contact);
+
     $('#lang-concept-title').text(language.conceptTitle);
     $('#lang-concept-text-one').text(language.conceptTextOne);
     $('#lang-concept-text-two').text(language.conceptTextTwo);
